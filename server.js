@@ -1,3 +1,6 @@
-const express = require("express");
+const app = require("./app.js");
+const PORT = 3010;
 
-// A server side rendered blog
+app.listen(PORT, () => {
+    console.log(`Your server has started in port ${PORT}`);
+})
