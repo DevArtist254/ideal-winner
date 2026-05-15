@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Signup | My Application
+
+    body
+        form(action="/api/v1/signup", method="POST")
+            .label
+                label(for="Username") Username
+                input(type="text", name="username", placeholder="Enter yourname")
+            .label
+                label(for="email") Email Address
+                input(type="email", name="email", placeholder="name@example.com")
+            .label
+                label(for="password") Password
+                input(type="password", name="password", placeholder="Enter your password")
+
+            button(type="submit") Sign up
+
